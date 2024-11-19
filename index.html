@@ -670,7 +670,10 @@ function plusSlides(n) {
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
-
+// Auto-slide every 5 seconds
+setInterval(function() {
+    showSlides(slideIndex += 1);
+}, 3000);  // Change slide every 5 seconds (5000 milliseconds)
 
 </script>
 
